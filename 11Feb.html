@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Practice</title>
+</head>
+<body>
+    <script>
+       var obtained_phy_marks=parseInt(prompt("Enter Your marks in Physics out of 85"));
+       var total_phy_marks=85;
+       var result=(obtained_phy_marks/total_phy_marks)*100;
+       document.write("Your percentage in Physics is ===>"+result+"%"+"&nbsp"+"&nbsp"+"&nbsp");
+       if(result>="90"){
+        document.write("A+ Grade"+"<br/>"+"<br/>");
+       }
+       else if(result>="80"){
+        document.write("A Grade"+"<br/>"+"<br/>");
+       }
+       else if(result>="70"){
+        document.write("B Grade"+"<br/>"+"<br/>");
+       }
+       else if(result>="60"){
+        document.write("C Grade"+"<br/>"+"<br/>");
+       }
+       else if(result>="50"){
+        document.write("D Grade"+"<br/>"+"<br/>");
+       }
+       else if(result>="40"){
+        document.write("E Grade"+"<br/>"+"<br/>");
+       }
+       else if(result<="30"){
+        document.write("F Grade"+"<br/>"+"<br/>");
+       }
+       var obtained_bio_marks=parseInt(prompt("Enter Your Marks in Biology out of 85"));
+       var total_bio_marks=85;
+       var result=(obtained_bio_marks/total_bio_marks)*100;
+       document.write("Your Percentage in Biology is===>"+result+"%"+"&nbsp"+"&nbsp");
+       if(result>="90"){
+        document.write("A+ Grade"+"<br/>"+"<br/>");
+       }
+       else if(result>="80"){
+        document.write("A Grade"+"<br/>"+"<br/>");
+       }
+       else if(result>="70"){
+        document.write("B Grade"+"<br/>"+"<br/>");
+       }
+       else if(result>="60"){
+        document.write("C Grade"+"<br/>"+"<br/>");
+       }
+       else if(result>="50"){
+        document.write("D Grade"+"<br/>"+"<br/>");
+       }
+       else if(result>="40"){
+        document.write("E Grade"+"<br/>"+"<br/>");
+       }
+       else if(result<="30"){
+        document.write("F Grade"+"<br/>"+"<br/>");
+       }
+    var input_num_1=parseInt(prompt("Enter your first number"));
+    var input_num_2=parseInt(prompt("Enter your Second number"));
+    if(input_num_1>input_num_2){
+        document.write("Number 1 is bigger than number 2===="+"&nbsp"+(input_num_1*3)+"<br/>");
+        if(input_num_1%2==0){
+            document.write("Number 1 is Even===="+(input_num_1/2));
+        }
+        if(input_num_1%2 !=0){
+            document.write("Number 2 is Odd===="+(input_num_1*3));
+        }
+    }
+    else if(input_num_2>input_num_1){
+        document.write("Number 2 is greater than number 1===="+"&nbsp"+"&nbsp"+(input_num_2*3)+"<br/>");
+        if(input_num_2%2==0){
+            document.write("Number 2 is Even===="+(input_num_2/2));
+        }
+        if(input_num_2%2 !=0){
+            document.write("Number 2 is Odd===="+(input_num_2*5));
+        }
+    }
+    var num_1=parseInt(prompt("Enter Your First Number"));
+    var num_2=parseInt(prompt("Enter Your Second Number"));
+    var num_3=parseInt(prompt("Enter Your Third Number"));
+    if(num_1>num_2 && num_1>num_3){
+        document.write("Larger Number==="+(num_1)+"&nbsp"+"&nbsp");
+        if(num_2>num_1 || num_2>num_3){
+            document.write("Smaller===="+(num_2)+"&nbsp"+"&nbsp");
+        }
+        if(num_3>num_1 && num_3>num_2){
+            document.write("Smallest===="+(num_3)+"&nbsp"+"&nbsp");
+        }
+    }
+    else if(num_2>num_1 && num_2>num_3){
+            document.write("Larger Number===="+(num_2));
+        }
+    else if(num_3>num_1 && num_3>num_2){
+        document.write("Larger Number===="+(num_3));
+    }
+    </script>
+</body>
+</html>
