@@ -95,6 +95,25 @@
     else if(num_3>num_1 && num_3>num_2){
         document.write("Larger Number===="+(num_3));
     }
+
+
+         var quiz_question=[prompt("What is the basic unit of life....\n a)Tissue \n b)Organ \n c)Cell"), prompt("Which organ of body Pumps Blood.... \n a)Heart \n b)Spleen \n c)Brain")]
+
+            var marks=0;
+            if(quiz_question[0]=="c"){
+                marks++;
+            }
+            if(quiz_question[1]=="a"){
+                marks++;
+            }
+            var result=(marks/2)*100;
+            if(result="100"){
+                document.write("You are Pass");
+            }
+            else if(result="50"){
+                document.write("You are Fail");
+            }
+            // document.write("Your Marks in Quiz are =====>"+result+"%");
     </script>
 </body>
 </html>
