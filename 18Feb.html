@@ -7,9 +7,35 @@
 </head>
 <body>
     <script>
-        var quiz_questions=[prompt("Which country has largest army in the world... \n a)Russia \n b)USA \n c)China \n d)India",prompt("Hepatitis is the disease of which of the following organ....\n a)Heart \n b)Liver \n c)Lungs \n d)Brain"),prompt("ECG is used in diagnosis of...\n a)Brain \n b)Heart \n c)Kidneys \n d)Lungs"),prompt("The AIDS virus is called \n a)AIB \n b)BIH \n c)HIV \n d)VIH"),)]
-        var marks=0;
-        if()
+        var quiz_questions=[prompt("Which country has largest army in the world... \n a)Russia \n b)USA \n c)China \n d)India"),prompt("Hepatitis is the disease of which of the following organ....\n a)Heart \n b)Liver \n c)Lungs \n d)Brain"),prompt("ECG is used in diagnosis of...\n a)Brain \n b)Heart \n c)Kidneys \n d)Lungs"),prompt("The AIDS virus is called \n a)AIB \n b)BIH \n c)HIV \n d)VIH"),prompt("What is the SI unit of Temperature..\n a)Celsius \n b)Candella \n c)Joule \n d)Kelvin"),prompt("What is the national animal of Pakistan \n a)Markhor \n b)Zebra \n c)Lion \n d)Cat")];
+        var marks = 0;
+        if(quiz_questions[0]=="c"){
+            marks++;
+        }
+        if(quiz_questions[1]=="b"){
+            marks++;
+        }
+        if(quiz_questions[2]=="b"){
+            marks++;
+        }
+        if(quiz_questions[3]=="c"){
+            marks++;
+        }
+        if(quiz_questions[4]=="d"){
+            marks++;
+        }
+        if(quiz_questions[5]=="a"){
+            marks++;
+        }
+        var result=(marks/6)*100;
+        document.write("Your Marks in Quiz is =====>"+marks+" /6"+"</br>"+"</br>");
+        document.write("Your Percentage in Quiz is ====> "+ result+"</br>"+"</br>");
+        if(result>="50"){
+            document.write("Congragulations you are pass....Well done");
+        }
+        else if(result<="50"){
+            document.write("You are Fail....Better Luck next Time");
+        }
     </script>
 </body>
 </html>
