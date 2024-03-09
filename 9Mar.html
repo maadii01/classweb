@@ -1,0 +1,180 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Practice</title>
+    <link rel="stylesheet" href="9Mar.css">
+    <style>
+
+body{
+    background-color: goldenrod;
+}
+
+h1{
+    color: rgb(170, 20, 170);
+    text-align: center;
+    margin-top: 3%;
+    font-size: 40px;
+    text-decoration: underline;
+    font-family: tahoma;
+}
+button{
+    margin-top: 5vh;
+    font-size: 30px;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    margin-left: 4vw;
+    background-color: wheat;
+    border: none;
+    width: 25vw;
+    height: 30vh;
+}
+button:hover{
+    background-color: rgb(211, 141, 12);
+    color: white;
+    transition: all 0.8s;
+}
+    </style>
+</head>
+<body>
+    <!-- <h1>Hello World</h1> 
+ 
+    <div class="bulb">
+    </div>
+    <button>ON<m/button> 
+    <h1>Hello G</h1>
+    <h1>Medicoo</h1>
+    <h1>Kemcolians</h1>  -->
+
+
+
+    <h1>Quizzes</h1>
+    <button class="phy">Physics Quiz</button>
+    <button class="bio">Biology Quiz</button>
+    <button class="chem">Chemistry Quiz</button>
+    <button >English Quiz</button>
+    <script src="9Mar.js">
+
+var a=document.querySelector(".phy")
+a.addEventListener("click",function(){
+    a.quiz_questions = [
+        prompt("The Law of inertia is another name of which Newton`s Law... \n a)1st  \n b)2nd \n c) 3rd \n d) None of these"),
+        prompt("If Force is 5N and displacement is 4m then the Work done by the body....\n a)10Nm \n b) 30 J \n c) 20Nm \n d) 25J"),
+        prompt("Electric Flux will be Maximum at which Angle...\n a) 90 \n b) 180 \n c) 270 \n d) 0"),
+        prompt("Transformers works on the Principle of Which Phenomenon \n a) Electromagnetic Induction \n b)Mutual Inductance \n c) EMF  \n d)None of these"),
+        prompt("What is the SI unit of Temperature..\n a) Celsius \n b) Candella \n c) Joule \n d) Kelvin"),
+        prompt("The Special Theory of Relativity is given by  \n a)Isaac Newton \n b) Albert Einstein \n c) Gregor Mendel \n d) Joule Thomson")
+    ];
+    var marks = 0;
+    if (a.quiz_questions[0] === "a","1st","1") {
+        marks++;
+    }
+    if (a.quiz_questions[1] === "c","20Nm","20nm") {
+        marks++;
+    }
+    if (a.quiz_questions[2] === "d","0") {
+        marks++;
+    }
+    if (a.quiz_questions[3] === "b","Mutual Inductance","mutual inductance") {
+        marks++;
+    }
+    if (a.quiz_questions[4] === "d","Kelvin","kelvin") {
+        marks++;
+    }
+    if (a.quiz_questions[5] === "b","Albert Einstein","Einstein","albert einstein") {
+        marks++;
+    }
+    var result = (marks / 6) * 100;
+    document.write("Your Marks in Quiz is =====>" + marks + " /6" + "</br>" + "</br>");
+    document.write("Your Percentage in Quiz is ====> " + result + "</br>" + "</br>");
+    if (result >= 50) {
+        document.write("Congratulations you passed....Well done");
+    } else {
+        document.write("You failed....Better Luck next Time");
+    }
+});
+
+
+var b=document.querySelector(".bio")
+b.addEventListener("click",function(){
+    b.quiz_questions = [
+        prompt("The Father of Genetics is Said for Whom... \n a) Gregor Mendel\n b) Theoder Schedwain \n c) Robert Hooke \n d) Lyell"),
+        prompt("Meningitis is the disease of which of the following organs....\n a) Heart \n b) Liver \n c) Lungs \n d) Brain"),
+        prompt("EEG is used in the diagnosis of...\n a) Brain \n b) Heart \n c) Kidneys \n d) Lungs"),
+        prompt("The AIDS virus is called \n a) AIB \n b) BIH \n c) HIV \n d) VIH"),
+        prompt("The Basic Unit of Life is ..\n a) Tissue \n b) Organ \n c) Cell \n d) None of These"),
+        prompt("The weight of blood in Human Body is ... \n a) 1/12 of body \n b) 1/5 of body \n c) 1/2 of body \n d) 1/20 of body")
+    ];
+    var marks = 0;
+    if (b.quiz_questions[0] === "a","Gregor Mendel","gregor mendel") {
+        marks++;
+    }
+    if (b.quiz_questions[1] === "d","Brain","brain") {
+        marks++;
+    }
+    if (b.quiz_questions[2] === "a","Brain","brain") {
+        marks++;
+    }
+    if (b.quiz_questions[3] === "c","HIV","hiv") {
+        marks++;
+    }
+    if (b.quiz_questions[4] === "c","Cell","cell") {
+        marks++;
+    }
+    if (b.quiz_questions[5] === "a","1/12 of Body","1/12 of body") {
+        marks++;
+    }
+    var result = (marks / 6) * 100;
+    document.write("Your Marks in Quiz is =====>" + marks + " /6" + "</br>" + "</br>");
+    document.write("Your Percentage in Quiz is ====> " + result +"&nbsp"+"%"+ "</br>" + "</br>");
+    if (result >= 50) {
+        document.write("Congratulations you passed....Well done");
+    } else {
+        document.write("You failed....Better Luck next Time");
+    }
+});
+
+var c=document.querySelector(".chem")
+c.addEventListener("click",function(){
+    c.quiz_questions = [
+        prompt("The Funtional group of the Alcohol is... \n a) -COOH \n b) -OH \n c) -COH \n d) -OR"),
+        prompt(" If moles of a particular solution is 2.5 mol and the volume of the solution is 10 dm3....\n a) 0.25 mol/dm3 \n b) 0.4 mol/dm3 \n c) 0.7 mol/dm3 \n d) 1.5 mol/dm3"),
+        prompt("The More Acidic Compound from following is ...\n a)Phenol \n b) Alcohol \n c) Carboxylic Acid \n d) Water"),
+        prompt("The more electronegative Element of Periodic Table is.... \n a)Hydrogen \n b) Flourine \n c) Chlorine \n d) Carbon"),
+        prompt("The Nucleas Of an Atom was Discovered by ..\n a)Neil Bohr  \n b) Gregor Mendel \n c) RutherFord \n d) None of These"),
+        prompt("The Lattice Energy is maximum for ... \n a) LiCl \n b) NaCl \n c) KCl \n d) All of these ")
+    ];
+    var marks = 0;
+    if (c.quiz_questions[0] === "b","-OH","OH") {
+        marks++;
+    }
+    if (c.quiz_questions[1] === "a","0.25") {
+        marks++;
+    }
+    if (c.quiz_questions[2] === "c","Caboxylic Acid","caboxylic acid") {
+        marks++;
+    }
+    if (c.quiz_questions[3] === "b","Flourine","flourine") {
+        marks++;
+    }
+    if (c.quiz_questions[4] === "c","RutherFord","Rutherford","rutherford") {
+        marks++;
+    }
+    if (c.quiz_questions[5] === "a","LiCl","licl") {
+        marks++;
+    }
+    var result = (marks / 6) * 100;
+    document.write("Your Marks in Quiz is =====>" + marks + " /6" + "</br>" + "</br>");
+    document.write("Your Percentage in Quiz is ====> " + result +"&nbsp"+"%"+ "</br>" + "</br>");
+    if (result >= 50) {
+        document.write("Congratulations you passed....Well done");
+    } else {
+        document.write("You failed....Better Luck next Time");
+    }
+});
+    </script>
+</body>
+</html>
+
+
