@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    <!-- <button onclick="whileloop()">While Loop</button> -->
+
+    <!-- <button onclick="loop()">Sum of the Number</button>
+    <button onclick="dowhilecheck()">Do While Check</button> -->
+
+
+    <!-- <button onclick=" checkdate_work()"></button> -->
+    <!-- <button onclick="to_checkswitch()"></button> -->
+
+    <button onclick="quiz()"></button>
+    <script>
+
+        // function while_loop(){
+//     for (let i=1;i<=10;i++){
+//         document.write("This is the counting is=====>"+i+"<br/>");
+//     }
+// }
+
+// function whileloop(){
+//     var i=1;
+//     var total_num=0;
+//     while(i<10){
+//         i++;
+//         document.write("The counting is ====>"+i+"<br/>");
+//         total_num = total_num+i;
+//     }
+//     document.write("The sum of total : "+total_num);
+// }
+
+// function whileloop(){
+//     while(i<5){
+
+
+//     if (i==1){
+//         alert("Your Balance is as====");
+//     }
+//     if(i==2){
+//         alert("Contact to the Customer");
+//     }
+//     if(i==3){
+//         alert("Your Packages are");
+//     }
+//     document.write("Counting Number====>"+i+"<br/>");
+//     i++;
+// }
+// }
+
+// function loop(){
+//     var i=parseInt(prompt("Enter Your Number"));
+//     while(i<100){
+//         i++;
+//         document.write("The Counting of the Number is =====>"+i+"<br/>");
+//     }
+// }
+
+// function dowhilecheck(){
+//     let i=3;
+//     do {
+//        alert("Printing Value===>"+i) ;
+//        i++;
+//     } while (i<=5);
+// }
+// function checkdate_work(){
+//     let todaydate= new Date();
+//     document.write( todaydate+"<br/>");
+//     document.write(todaydate.getMonth()+"<br/>");
+//     document.write(todaydate.getFullYear()+"<br/>");
+//     document.write(todaydate.getHours()+"<br/>");
+// }
+
+// function to_checkswitch(){
+//     let number=parseInt(prompt("Enter Your Number from 1 to 3"));
+//     switch(number){
+//         case 1:
+//             alert("You are just begin the Game");
+//             break;
+//         case 2:
+//             alert("YOu are middle of the game");
+//             break;
+//         case 3:
+//             alert("Your Game is over");
+//             break;
+//         default:
+//             alert("Invalid Option");
+//         break;
+//     }
+// }
+
+function quiz(){
+    let quiz_questions=[ prompt("The Law of inertia is another name of which Newton`s Law... \n a)1st  \n b)2nd \n c) 3rd \n d) None of these"), prompt("If Force is 5N and displacement is 4m then the Work done by the body....\n a)10Nm \n b) 30 J \n c) 20Nm \n d) 25J"),];
+    let marks=0;
+    switch(quiz_questions){
+        case 1:
+            quiz_questions[0]=="a"
+            marks++;
+        case 2:
+            quiz_questions[1]=="c"
+            marks++;
+            break;
+   
+    }
+    let result=(marks/2)*100;
+    document.write("Your Percentage in the Quiz is"+result);
+}
+    </script>
+</body>
+</html>
