@@ -52,7 +52,7 @@ document.getElementById("count").innerHTML=counter;
 // document.write(counter);
 }
 
-function form(){
+function myform(){
     let firstname=document.getElementById("fname").value;
     let lastname=document.getElementById("lname").value;
     let password=document.getElementById("pass").value;
