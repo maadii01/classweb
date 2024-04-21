@@ -34,12 +34,15 @@ function user_login(){
     let user_login_form={
         firstname:document.getElementById("userfname").value,
         password:document.getElementById("userpassword").value,
-    }
+    };
 
 if(
-    firstname==localStorage.getItem(user_data_parse.First_Name) &&
-    password==localStorage.getItem(user_data_parse.password)
-)(
-alert("you are successfully login")
-)
+    user_login_form.firstname==localStorage.getItem("First_name") &&
+    user_login_form.password==localStorage.getItem("password")
+){
+alert("you are successfully login");
+}
+else{
+    alert("Login Failed");
+}
 }
